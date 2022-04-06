@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DXacp - DuongX</title>
+    <script src="/dx-acp.js"></script>    
+</head>
+<body>
+    <input id='search' type="text" placeholder="Chọn chuyên mục ..." class="rounded-[5px] p-2 mt-2 w-full">
+    <script>
+        DXacp.init({
+            input: '#search',
+            data: ['nam','phong','duong','nu','dung'],
+            key: 'name',
+            template: v => `
+                ${v}
+            `,
+            select: v => {
+                console.log(v)
+            }
+        })
+    </script>
+</body>
+</html>
