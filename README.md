@@ -63,7 +63,7 @@ select: value => {
 ```
 
 ### Thông Tin
-- Name: DXacp
+- Name: DXacp.js
 - Author: DuongX
 - Version: 1.0.0
 - Date: 04/06/2022
